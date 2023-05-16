@@ -1,17 +1,20 @@
 type Item = {
   key: string;
   space?: number;
+  clip?: number;
 };
 
 const order: Item[] = [
   {
     key: "theSpanishPhrase",
+    clip: 0.5,
   },
   {
     key: "spanishPhrase",
   },
   {
     key: "wouldBeSimilarToSaying",
+    clip: 0.5,
   },
   {
     key: "englishPhrase",

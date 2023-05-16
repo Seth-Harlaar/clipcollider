@@ -27,14 +27,26 @@ const record = (p: {
     index++;
 
     // Keep playing while there are more clips to play
-    if (index < clips.length) {
+    if (index < 5) {
       const { space = 0 } = order[index];
+      const { clip = 0 } = order[index];
       const player = clips[index];
+
+      // get the length of the clip
+      const time = player.buffer.duration;
+
       player.onstop = () => {
         setTimeout(playNext, space * 1000);
       };
 
       player.start();
+
+      // stop the clip, if specified,
+      // at time of playing, plus the length of the clip minus 0.5 seconds
+      if( clip == 0 ){
+        player.stop( ("+" + (time-0.5).toString()) );  
+      }
+      
     } else {
       // After the last clip, download and clean up
       download({
