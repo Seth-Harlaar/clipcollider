@@ -10,14 +10,14 @@ const order: Item[] = [
   },
   {
     key: "spanishPhrase",
-    clip: 1.1,
+    clip: 0.5,
   },
   {
     key: "wouldBeSimilarToSaying",
   },
 {
     key: "englishPhrase",
-    clip: 0.7,
+    clip: 0.5,
   },
 {
     key: "inEnglish",
@@ -53,7 +53,7 @@ const order: Item[] = [
   },
   {
     key: "inTheFollowing3Examples",
-    space: 1,
+    space: 1.5,
   },
   {
     key: "ejemploUno",
@@ -61,21 +61,21 @@ const order: Item[] = [
 // 15
   {
     key: "example1",
-    space: 1.5,
+    space: 2,
   },
   {
     key: "ejemploDos",
   },
   {
     key: "example2",
-    space: 1.5,
+    space: 2,
   },
   {
     key: "ejemploTres",
   },
   {
     key: "example3",
-    space: 1.5,
+    space: 2,
   },
 // 20
   {
@@ -86,6 +86,7 @@ const order: Item[] = [
   },
   {
     key: "inSpanishYouWouldSay",
+    clip: 0.5,
   },
   {
     key: "spanishPhrase",
