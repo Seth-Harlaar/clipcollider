@@ -7,27 +7,29 @@ type Item = {
 const order: Item[] = [
   {
     key: "theSpanishPhrase",
-    clip: 0.5,
   },
   {
     key: "spanishPhrase",
+    clip: 1.1,
   },
   {
     key: "wouldBeSimilarToSaying",
-    clip: 0.5,
   },
-  {
+{
     key: "englishPhrase",
+    clip: 0.7,
   },
-  {
+{
     key: "inEnglish",
     space: 0.5,
   },
-  {
+// 5
+{
     key: "nowMimicThePhrase",
   },
   {
     key: "spanishPhraseSlowedDown",
+    clip: 0.5,
   },
   {
     key: "asTheAudioLoops3Times",
@@ -38,6 +40,7 @@ const order: Item[] = [
   {
     key: "spanishPhraseSlowedDown",
   },
+// 10
   {
     key: "spanishPhraseSlowedDown",
     space: 1,
@@ -55,6 +58,7 @@ const order: Item[] = [
   {
     key: "ejemploUno",
   },
+// 15
   {
     key: "example1",
     space: 1.5,
@@ -73,6 +77,7 @@ const order: Item[] = [
     key: "example3",
     space: 1.5,
   },
+// 20
   {
     key: "toSay",
   },
@@ -88,6 +93,7 @@ const order: Item[] = [
   {
     key: "spanishPhrase",
   },
+// 25
   {
     key: "spanishPhrase",
     space: 2,

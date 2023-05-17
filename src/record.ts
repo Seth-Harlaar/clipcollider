@@ -43,8 +43,8 @@ const record = (p: {
 
       // stop the clip, if specified,
       // at time of playing, plus the length of the clip minus 0.5 seconds
-      if( clip == 0 ){
-        player.stop( ("+" + (time-0.5).toString()) );  
+      if( clip !== 0 ){
+        player.stop( ("+" + (time-clip).toString()) );
       }
       
     } else {
